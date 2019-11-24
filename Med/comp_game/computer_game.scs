@@ -1,0 +1,77 @@
+concept_computer_game
+
+=> nrel_main_idtf:[компьютерная игра] (* <- lang_ru;; *);
+=> nrel_main_idtf:[computer game] (* <- lang_en;; *);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	<= nrel_using_constants: ...
+	(* 
+		-> concept_computer_programm;;
+	*);;
+		=> nrel_main_idtf: [Опр.(компьютерная игра)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*
+		-> [Компьютерная игра - это компьютерная программа, служащая для организации игрового процесса] (* <- lang_ru;; *);;
+	*);;
+*);
+
+
+<= nrel_subdividing: ...
+(*
+	-> concept_two_dimensional_game;;
+	-> concept_pseudothree_dimensional_game;;
+	-> concept_three_dimensional_game;;
+	-> concept_augmented_reality_game;;
+	-> concept_game_with_virtual_reality;;
+	=> nrel_main_idtf:[Разбиение по графическому изображению] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_singleplayer;;
+	-> concept_multiplayer;;
+	-> concept_joint_game_on_one_device;;
+	-> concept_massively_multiplayer_online_game;;
+	=> nrel_main_idtf:[Разбиение по количеству игроков] (* <- lang_ru;; *);;
+*);
+
+<= nrel_subdividing: ...
+(*
+	-> concept_singleplatform_game;;
+	-> concept_multiplatform_game;;
+	=> nrel_main_idtf:[Разбиение по количеству платформ] (* <- lang_ru;; *);;
+*);
+
+
+
+<= nrel_inclusion: concept_computer_programm;
+//vkluchenie janrov
+=> nrel_inclusion: concept_game_series;
+
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Компьютерные игры могут создаваться на основе фильмов и книг; есть и обратные случаи](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(компьютерная игра, звуковая игра)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[В компьютерных играх, как правило, игровая ситуация воспроизовдится на экране дисплея или обычного телевизора, но в то же время компьютерная игра может быть звуковой и др.](* <- lang_ru;; *);;
+	*);;	
+*);
+
+<- sc_node_not_relation;;
+

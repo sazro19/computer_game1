@@ -1,0 +1,247 @@
+scp_program -> proc_search_operation (*
+
+	-> rrel_params: .proc_search_operation_params (*
+	-> rrel_1: rrel_in: _parameter;;
+	-> rrel_2: rrel_in: _answer;;
+	*);;
+
+	-> rrel_operators: .proc_search_operation_operator_set (*
+
+	-> rrel_init: .equils_operator1 (*
+	<- genEl;;
+	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _cur_game;;
+	=> nrel_goto: .equils_operator2;;
+	*);;
+
+	-> .equils_operator2 (*
+	<- varAssign;;
+	-> rrel_1: rrel_assign: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: _parameter;;
+	=> nrel_goto: .equils_operator3;;
+	*);;
+
+	-> .equils_operator3 (*
+	<- genEl;;
+	-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_link: _kol_equils;;
+	=> nrel_goto: .pris_znach;;
+	*);;
+
+	-> .pris_znach (*
+	<- varAssign;;
+	-> rrel_1: rrel_assign: rrel_link: rrel_scp_var: _kol_equils;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+	=> nrel_goto: .equils_operator4;;
+	*);;
+
+	-> .equils_operator4 (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_computer_game;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _game;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _games;;
+	=> nrel_goto: .equils_operator5;;
+	*);;
+
+	-> .equils_operator5 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _games;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _game;;
+	=> nrel_then: .equils_operator5_5;;
+	=> nrel_else: .proc_search_operation_operator_return;;
+	*);;
+
+	-> .equils_operator5_5 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .equils_operator5_5_1;;
+	*);;
+
+	-> .equils_operator5_5_1 (*
+	<- contAssign;;
+	-> rrel_1: rrel_fixed: rrel_link: rrel_scp_var: _kol_equils;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+	=> nrel_goto: .equils_operator6;;
+	*);;
+
+	-> .equils_operator6 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _platform_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_platform;;
+	=> nrel_then: .equils_operator7;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+
+	-> .equils_operator7 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _platform_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_platform;;
+	=> nrel_then: .equils_operator8;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+	
+	-> .equils_operator8 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _platform_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _platform_cur_game;;
+	=> nrel_then: .equils_operator9;;
+	=> nrel_else: .equils_operator10;;
+	*);;
+	
+	-> .equils_operator9 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .equils_operator10;;
+	*);;
+
+	-> .equils_operator10 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _publisher_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_publisher;;
+	=> nrel_then: .equils_operator11;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+
+	-> .equils_operator11 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _publisher_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_publisher;;
+	=> nrel_then: .equils_operator12;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+	
+	-> .equils_operator12 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _publisher_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _publisher_cur_game;;
+	=> nrel_then: .equils_operator13;;
+	=> nrel_else: .equils_operator14;;
+	*);;
+	
+	-> .equils_operator13 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .equils_operator14;;
+	*);;
+
+	
+	-> .equils_operator14 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _developer_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_developer;;
+	=> nrel_then: .equils_operator15;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+
+	-> .equils_operator15 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _developer_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_developer;;
+	=> nrel_then: .equils_operator16;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+	
+	-> .equils_operator16 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _developer_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _developer_cur_game;;
+	=> nrel_then: .equils_operator17;;
+	=> nrel_else: .equils_operator18;;
+	*);;
+	
+	-> .equils_operator17 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .equils_operator18;;
+	*);;
+
+
+	-> .equils_operator18 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _engine_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_game_engine;;
+	=> nrel_then: .equils_operator19;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+
+	-> .equils_operator19 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _engine_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_game_engine;;
+	=> nrel_then: .equils_operator20;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+	
+	-> .equils_operator20 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _engine_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _engine_cur_game;;
+	=> nrel_then: .equils_operator21;;
+	=> nrel_else: .equils_operator100;;
+	*);;
+	
+	-> .equils_operator21 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .equils_operator100;;
+	*);;
+
+	-> .equils_operator100 (*
+	<- ifGr;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_equils;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: [2];;
+	=> nrel_then: .equils_operator101;;
+	=> nrel_else: .equils_operator5;;
+	*);;
+	
+	-> .equils_operator101 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _game;;
+	=> nrel_goto: .equils_operator5;;
+	*);;
+
+	-> .equils_print_error (*
+	<- print;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: [error];;
+	=> nrel_goto: .proc_search_operation_operator_return;;
+	*);;
+
+	-> .proc_search_operation_operator_return (*
+	<- return;;
+	*);;
+	*);;
+*);;
