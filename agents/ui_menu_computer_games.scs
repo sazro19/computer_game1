@@ -1,0 +1,20 @@
+ui_menu_computer_games
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команды для компьютерных игр]
+	(* <- lang_ru;; *);
+	[Library component. Commands for computer games]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_non_atomic_reusable_components;;
+
+ui_menu_computer_games	<- ui_user_command_class_noatom;;
+
+ui_menu_computer_games	=> nrel_main_idtf: [Команды для компьютерных игр] (* <- lang_ru;; *);;
+ui_menu_computer_games => nrel_main_idtf: [Commands for computer games] (* <- lang_en;; *);;
+
+ui_menu_computer_games <= nrel_ui_commands_decomposition:
+{
+	ui_menu_search_year;
+	ui_menu_equils_game
+};;
