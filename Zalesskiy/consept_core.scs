@@ -1,0 +1,32 @@
+concept_core
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [кор]
+      (*<-lang_ru;;*);
+       [core]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Герой, задача которого быстрый заработок денег и раскачка]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (кор)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Кор - герой, задача которого быстрый заработок денег и раскачка.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(кор)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Коры, как правило, слабы в начале игры и сильны в конце.](*<-lang_ru;;*);;
+      *);;
+  *);;

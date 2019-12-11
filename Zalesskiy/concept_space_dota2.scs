@@ -1,0 +1,34 @@
+concept_space_dota2
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [спэйс]
+      (*<-lang_ru;;*);
+       [space]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [игровая ситуация]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (спэйс)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_computer_game;
+       computer_game_dota_2;
+       nrel_oponent
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Спэйс - игровая ситуация в компьютерной игре Дота 2, которая заключается в отвлечении внимания противника.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(спэйс)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Спэйс, как правило, создается хардлейнерами.](*<-lang_ru;;*);;
+      *);;
+  *);;

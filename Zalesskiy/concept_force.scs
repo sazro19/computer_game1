@@ -1,0 +1,33 @@
+concept_force
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [сила]
+      (*<-lang_ru;;*);
+       [force]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [качественный показатель силы]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (сила)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_force">Сила</b></sc_element> - качественный показатель <b><sc_element sys_idtf="concept_hero_char">героя</b></sc_element>, отражающий его силовые показатели.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(сила)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[С увеличинием силы <b><sc_element sys_idtf="concept_hero_char">герой</b></sc_element> получает бонус к здоровью, регенерации здоровья в секунду и сопротивлению к магии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+

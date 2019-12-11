@@ -1,0 +1,46 @@
+computer_game_star_wars_jedi_fallen_order
+=> nrel_main_idtf: [Star wars Jedi fallen order] (* <- lang_en;; *);
+=> nrel_main_idtf: [Звездные войны Павший джедайский орден] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_adventure;
+=> nrel_platform: concept_microsoft_windows; 
+=> nrel_platform: xbox_one;
+=> nrel_platform: playstation_4;
+=> nrel_publisher: company_Electronic_arts;
+=> nrel_developer: company_Respawn_enterteiment;
+=> nrel_publication_date: date_2019;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Действие игры происходит вскоре после событий фильма «Звёздные войны. Эпизод III: Месть ситхов». После объявленного императором Палпатином «Приказа 66» большинство джедаев было убито, и главный герой игры, молодой падаван по имени Кэл Кестис (англ. Cal Kestis) вынужден уйти в подполье и скрываться, спасая свою жизнь. В соответствии с описанием разработчиков, в ходе игры герой должен завершить своё обучение и овладеть искусством владения световым мечом. Кэла Кестиса в игре озвучил американский актёр Камерон Монахэн[2]. В скитаниях Кэлу Кестису помогает дроид по имени BD-1 и наставница — рыцарь-джедай, озвученная актрисой Деброй Уилсон];
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_publication_date;
+          concept_singleplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Star wars Jedi fallen order)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Star wars Jedi fallen order - компьютерная игра с видом от третьего лица в жанре приключенческая игра, выпущена компанией Electronic arts в 2019 году на платформах Windows, Playstation 4 и Xbox one. Одиночная игра с cюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Star_wars_jfo.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

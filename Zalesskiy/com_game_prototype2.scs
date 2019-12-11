@@ -1,0 +1,45 @@
+computer_game_prototype_2
+=> nrel_main_idtf: [Prototype 2] (* <- lang_en;; *);
+=> nrel_main_idtf: [Прототип 2] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_action;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_platform: xbox_360;
+=> nrel_platform: playstation_3;  
+=> nrel_publisher: company_Activision;
+=> nrel_developer: company_Radical_Entertainment;
+=> nrel_publication_date: date_2012;
+<- concept_setting_nowadays;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Сержант Джеймс Хеллер, находился в «горячей точке» на Ближнем Востоке. В Нью-Йорке его ждала семья — дочь Амайя и жена Колетт. По телефону Колетт рассказывает мужу, что в городе вновь эпидемия. Хеллер пытается успокоить жену, говоря, что скоро вернётся, и семья уедет из города, пока все не наладится. Однако, вернувшись домой, Джеймс обнаруживает, что его семья погибла в ходе эпидемии. Он винит во всем известного всему городу террориста Алекса Мерсера, жаждет убить его, считая его виновным в смерти близких, и вызывается добровольцем на самоубийственное задание в центре «Красной Зоны» на Манхэттэне.];
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_publication_date;
+          concept_singleplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Prototype 2)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Prototype 2 - компьютерная игра с видом от третьего лица в жанре action, выпущена компанией Activision в 2010 году на платформе Windows, xbox 360, playstation 3. Одиночная с сюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Prototype2.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

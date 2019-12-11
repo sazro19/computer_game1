@@ -1,0 +1,36 @@
+concept_stat
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [характеристика]
+      (*<-lang_ru;;*);
+       [stat]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [качественный показатель героя]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (характеристика)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_stat">Характеристика</b></sc_element> - качественный показатель <b><sc_element sys_idtf="concept_hero_char">героя</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(характеристика)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[С увеличинием определенной <b><sc_element sys_idtf="concept_stat">характеристики</b></sc_element> <b><sc_element sys_idtf="concept_hero_char">герой</b></sc_element> получает соответственный бонус к тому или иному параметру.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<=nrel_subdividing:
+{concept_force;
+ concept_dexterity;
+concept_intelligence
+};;

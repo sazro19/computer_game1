@@ -1,0 +1,33 @@
+concept_trickster
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ловкач]
+      (*<-lang_ru;;*);
+       [trickster]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Герой, основная характеристика которого является ловкость]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ловкач)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char;
+       concept_stat;
+       nrel_main_stat
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_trickster">Ловкач</b></sc_element> - <b><sc_element sys_idtf="concept_hero_char">герой</b></sc_element>, <b><sc_element sys_idtf="nrel_main_stat">основная характеристика</b></sc_element> которого является <b><sc_element sys_idtf="concept_dexterity">ловкость</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(ловкач)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[За каждую единицу <b><sc_element sys_idtf="concept_dexterity">ловкости</b></sc_element> <b><sc_element sys_idtf="concept_trickster">ловкач</b></sc_element> получает дополнительный белый урон.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

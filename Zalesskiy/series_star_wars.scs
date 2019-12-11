@@ -1,0 +1,33 @@
+concept_game_series_star_wars				
+=> nrel_main_idtf:[серия игр Звездные войны] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Star wars] (* <- lang_en;; *);
+-> computer_game_star_wars_the_force_1;
+-> computer_game_star_wars_the_force_2;
+-> computer_game_star_wars_battlefront_1;
+-> computer_game_star_wars_battlefront_2;
+-> computer_game_star_wars_battlefront_2015;
+-> computer_game_star_wars_battlefront_2017;
+->rrel_last_game: computer_game_star_wars_jedi_fallen_order;
+-> computer_game_star_wars_republic_commando;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+		concept_game_series
+	};;
+		=> nrel_main_idtf: [Опр.(серия игр Звездные войны)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Звездные войны - серия компьютерных игр по одноименной серии фильмов.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр Звездные войны)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Существуют как игры, повторяющие сюжет фильмов, так и отклоняющиеся от него.](* <- lang_ru;; *);;	
+	*);;	
+*);
+<- sc_node_not_relation;;

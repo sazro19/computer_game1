@@ -1,0 +1,46 @@
+computer_game_star_wars_the_force_1
+=> nrel_main_idtf: [Star wars The Force Unleashed] (* <- lang_en;; *);
+=> nrel_main_idtf: [Звездные войны Раскрытая сила] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_adventure;
+=> nrel_platform: concept_microsoft_windows; 
+=> nrel_platform: xbox_360;
+=> nrel_platform: playstation_3;
+=> nrel_publisher: company_Lucasarts;
+=> nrel_developer: company_Lucasarts;
+=> nrel_publication_date: date_2008;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Действие игры разворачивается между III и IV эпизодами кинематографической саги. Дарт Вейдер, жестокий владыка-ситх, прочёсывает Галактику в поисках уцелевших джедаев. Он прилетает на мятежный Кашиик, где вуки восстали против Империи, и, по слухам, им помогает некий джедай. Он находит этого джедая, Кенто Марека, и убивает его в поединке, прикончив противника Удушением Силы. Вейдер обнаруживает, что у Марека есть маленький сын Гален, чувствует в нём Силу, и забирает его для обучения Темной стороне. Он нарекает своего тайного ученика Старкиллером, и заставляет его поверить в то, что вместе они свергнут императора Палпатина.];
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_publication_date;
+          concept_singleplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Star wars The Force Unleashed)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example: 
+		[Star wars The Force Unleashed - компьютерная игра с видом от третьего лица в жанре приключенческая игра, выпущена компанией Lucasarts в 2008 году на платформах Windows, Playstation 3 и Xbox 360. Одиночная игра с cюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Star_wars_f1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,45 @@
+computer_game_prototype_1
+=> nrel_main_idtf: [Prototype 1] (* <- lang_en;; *);
+=> nrel_main_idtf: [Прототип 1] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_action;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_platform: xbox_360;
+=> nrel_platform: playstation_3;  
+=> nrel_publisher: company_Activision;
+=> nrel_developer: company_Radical_Entertainment;
+=> nrel_publication_date: date_2007;
+<- concept_setting_nowadays;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Протагонист игры — молодой человек Алекс Мерсер. Он приходит в себя в морге в штаб-квартире корпорации «Гентек», расположенной на Манхэттене, в тот момент, когда его пытаются вскрыть. Сбежав из здания, ему пытаются помешать наёмники организации Чёрный Дозор, Алекс обнаруживает у себя сверхчеловеческие способности, такие, как практическая неуязвимость к пулям, способность высоко прыгать, метать тяжёлые предметы, бегать по стенам зданий и «поглощать» людей, принимая их облик и «видя» их важные воспоминания. Так же у него есть способность мутировать — трансформировать своё тело, тем самым превращая свои руки в смертоносное оружие, защищающий от любого урона, щит и броню.];
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_publication_date;
+          concept_singleplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Prototype 1)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Prototype 1 - компьютерная игра с видом от третьего лица в жанре action, выпущена компанией Activision в 2007 году на платформе Windows, xbox 360, playstation 3. Одиночная с сюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Prototype1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

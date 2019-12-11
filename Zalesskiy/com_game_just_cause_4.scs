@@ -1,0 +1,45 @@
+computer_game_just_cause_4
+=> nrel_main_idtf: [Just cause 4] (* <- lang_en;; *);
+=> nrel_main_idtf: [Just cause 4] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_action;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_platform: xbox_one;
+=> nrel_platform: playstation_4;    
+=> nrel_publisher: company_Square_enix;
+=> nrel_developer: company_Avalanche_studios;
+=> nrel_publication_date: date_2018;
+<- concept_setting_nowadays;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Действие игры разворачивается в вымышленной южноамериканской стране под названием Солис. В этой части Just Cause Рико Родригес будет сражаться с организацией Чёрная рука, сама организация состоит из сильных и хорошо вооружённых солдат, руководит этой организацией волевая и хладнокровная женщина по имени Габриэлла Моралес. Как выяснилось из сюжета этой части игры, что именно Чёрная рука помогла захватить власть диктатору Сальвадору Мендосе в Just Cause и диктатору Себастьяно Ди Равелло в Just Cause 3. По сюжету Рико Родригес узнаёт о том, что его отец работал на Чёрную руку и теперь он отправляется в страну Солис, где находится штаб-квартира Чёрной руки, чтобы узнать правду: действительно ли его отец работал на них, а если да — то зачем.];
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_publication_date;
+          concept_singleplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Just cause 4)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example: 
+		 [Just cause 4 - компьютерная игра с видом от третьего лица в жанре action, выпущена компанией Square enix в 2015 году на платформе Windows, xbox one, playstation 4. Одиночная с сюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Just_cause4.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

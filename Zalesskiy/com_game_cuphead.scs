@@ -1,0 +1,48 @@
+computer_game_cuphead
+=> nrel_main_idtf: [Cuphead] (* <- lang_en;; *);
+=> nrel_main_idtf: [Чашкоголовый] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_platformer;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_platform: xbox_one;
+=> nrel_platform: playstation_4;  
+=> nrel_publisher: company_Studio_MDHR_Entertaiment;
+=> nrel_developer: company_Studio_MDHR_Entertaiment;
+=> nrel_publication_date: date_2017;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_two_dimensional_side_view;
+=> nrel_plot: [В одном волшебном мире жили два брата: Капхед и Магман. Жили они вместе со Стариной Чайником. Всё у них было хорошо, пока Капхед и Мугман не попали в "Казино Дьявола". Там им несказанно везло, и это заметил Король Дайз, смотритель казино. Тут явился сам владелец - Дьявол, и предложил им сыграть. Если они выиграют, то получат всё заведение, а если проиграют, то им придется отдать души Дьяволу. Магмен просит брата остановиться, но Капхед, невзирая на это, всё равно бросает кости. В результате он проигрывает (как всегда бывает при игре с дьяволом). Но братья просят Дьявола пощадить их. Тогда Дьявол требует, чтобы они собрали ему души должников. Братья соглашаются и убегают с пинком под зад. Они идут за советом к Старине Чайнику. Он даёт им способность стрелять из пальца, и братья отправляются в путь. Они проходят все три острова и побеждают всех должников.
+
+Однако когда они приносят контракты, на них нападает Кубик, т. к. ему не нравятся их успехи. Но братья побеждают Кубика и проходят к Дьяволу. Дьявол доволен, т. к. он разочаровался в Кубике и предлагает отдать контракты.];
+<- concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+         concept_computer_game;
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          concept_singleplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Cuphead)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [<b><sc_element sys_idtf="computer_game_cuphead">Cuphead</b></sc_element> - <b><sc_element sys_idtf="concept_computer_game">компьютерная игра</b></sc_element> с видом от третьего лица в <b><sc_element sys_idtf="concept_game_genre">жанре</b></sc_element> RPG, выпущена <b><sc_element sys_idtf="concept_game_company">компанией</b></sc_element> From software в 2019 году на <b><sc_element sys_idtf="concept_platform">платформе</b></sc_element>  <b><sc_element sys_idtf="concept_microsoft_windows">Windows</b></sc_element>,  <b><sc_element sys_idtf="xbox_one">xbox one</b></sc_element>,  <b><sc_element sys_idtf="playstation_4">playstation 4</b></sc_element>. <b><sc_element sys_idtf="concept_singleplayer_game">Одиночная игра</b></sc_element> с <b><sc_element sys_idtf="nrel_plot">сюжетом</b></sc_element>. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Cuphead.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

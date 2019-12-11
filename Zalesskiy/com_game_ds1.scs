@@ -1,0 +1,48 @@
+computer_game_dark_souls_1
+=> nrel_main_idtf: [Dark souls 1] (* <- lang_en;; *);
+=> nrel_main_idtf: [Темные души 1] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_RPG;
+=> nrel_platform: concept_microsoft_windows;
+=> nrel_platform: xbox_360;
+=> nrel_platform: playstation_3;  
+=> nrel_publisher: company_Bandai_namco;
+=> nrel_developer: company_From_software;
+=> nrel_publication_date: date_2011;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [отсутствует];
+<- concept_multiplayer_game;
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_plot;
+          concept_singleplayer_game;
+          concept_multiplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Dark souls 1)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [<b><sc_element sys_idtf="computer_game_dark_souls_1">Dark souls 1</b></sc_element> - <b><sc_element sys_idtf="concept_computer_game">компьютерная игра</b></sc_element> с видом от третьего лица в <b><sc_element sys_idtf="concept_game_genre">жанре</b></sc_element> <b><sc_element sys_idtf="concept_RPG">RPG</b></sc_element>, выпущена <b><sc_element sys_idtf="concept_game_company">компанией</b></sc_element> From software в 2011 году на <b><sc_element sys_idtf="concept_platform">платформе</b></sc_element> <b><sc_element sys_idtf="concept_microsoft_windows">Windows</b></sc_element>, <b><sc_element sys_idtf="xbox_360">Xbox 360</b></sc_element>  и <b><sc_element sys_idtf="playstation_3">playstation 3</b></sc_element>. <b><sc_element sys_idtf="concept_singleplayer_game">Одиночная</b></sc_element> и <b><sc_element sys_idtf="concept_multiplayer_game">Многопользовательская</b></sc_element> с отсутствием <b><sc_element sys_idtf="nrel_plot">сюжета</b></sc_element>. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Dark_Souls_1.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

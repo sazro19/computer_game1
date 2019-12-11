@@ -1,0 +1,32 @@
+concept_game_series_watch_dogs
+
+=> nrel_main_idtf:[серия игр Сторожевые псы] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Watch dogs] (* <- lang_en;; *);
+<= nrel_inclusion: concept_computer_game;
+-> rrel_first_game: computer_game_watch_dogs_1;
+-> computer_game_watch_dogs_2;
+-> rrel_last_game: computer_game_watch_dogs_legion;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+		concept_game_series;
+          concept_genre
+	};;
+		=> nrel_main_idtf: [Опр.(серия игр Сторожевые псы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Watch dogs - серия компьютерных игр в жанре action, разработанные компанией Ubisoft.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр Прототип)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Серия состоит из 3 игр.](* <- lang_ru;; *);;	
+	*);;	
+*);
+<- sc_node_not_relation;;

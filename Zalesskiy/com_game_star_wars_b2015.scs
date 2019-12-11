@@ -1,0 +1,46 @@
+computer_game_star_wars_battlefront_2015
+=> nrel_main_idtf: [Star wars Battlefront 1 (2015)] (* <- lang_en;; *);
+=> nrel_main_idtf: [Звездные войны Боевой фронт 1 (2015)] (* <- lang_ru;; *);
+
+<- concept_computer_game;
+<- concept_shooter;
+=> nrel_platform: concept_microsoft_windows; 
+=> nrel_platform: xbox_one;
+=> nrel_platform: playstation_4;
+=> nrel_publisher: company_Electronic_arts;
+=> nrel_developer: company_EA_DICE;
+=> nrel_publication_date: date_2015;
+<- concept_setting_fantasy;
+=> nrel_game_camera: concept_first_person_view;
+=> nrel_plot: [отсутствует];
+<-concept_multiplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_publication_date;
+          concept_multiplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Star wars Battlefront 1 (2015)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Star wars Battlefront 1 (2015) - компьютерная игра с видом от первого лица в жанре FPS, выпущена компанией Electronic arts в 2015 году на платформах Windows, Playstation 4 и Xbox one. Мультиплеерная игра без cюжета. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Star_wars_b2015.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

@@ -1,0 +1,31 @@
+concept_intelligence
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [интеллект]
+      (*<-lang_ru;;*);
+       [intelligence]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [качественный показатель интеллекта]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (интеллект)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_intelligence">Интеллект</b></sc_element> - качественный показатель <b><sc_element sys_idtf="concept_hero_char">героя</b></sc_element>, отражающий его умственные показатели.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(интеллект)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[С увеличинием <b><sc_element sys_idtf="concept_intelligence">интеллекта</b></sc_element> <b><sc_element sys_idtf="concept_hero_char">герой</b></sc_element> получает бонус к мане, регенирации маны в секунду и урона от <b><sc_element sys_idtf="nrel_ability">способностей</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

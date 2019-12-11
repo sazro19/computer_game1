@@ -1,0 +1,33 @@
+concept_hardlaner
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [хардлейнер]
+      (*<-lang_ru;;*);
+       [hardlaner]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Герой, задача которого помешать раскачке и заработку денег вражескому кору в начальной стадии игры]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (хардлейнер)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char;
+       concept_core
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Хардлейнер - герой, задача которого помешать раскачке и заработку денег вражескому кору в начальной стадии игры.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(хардлейнер)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Хардлейнеры являются основными героями для создания спэйса.](*<-lang_ru;;*);;
+      *);;
+  *);;

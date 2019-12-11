@@ -1,0 +1,32 @@
+concept_game_series_dark_souls				
+<=nrel_inclusion: concept_game_series;
+=> nrel_main_idtf:[серия игр Темные души] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Dark souls] (* <- lang_en;; *);
+->rrel_first_game: computer_game_dark_souls_1;
+-> computer_game_dark_souls_2;
+->rrel_last_game: computer_game_dark_souls_3;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+          concept_game_series;
+		concept_game_series
+	};;
+		=> nrel_main_idtf: [Опр.(серия игр Dark souls)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [<b><sc_element sys_idtf="concept_game_series_dark_souls">Серия игр Dark souls</b></sc_element> - <b><sc_element sys_idtf="concept_game_series">серия компьютерных игр</b></sc_element> в <b><sc_element sys_idtf="concept_game_genre">жанре</b></sc_element> <b><sc_element sys_idtf="concept_RPG">RPG</b></sc_element>, разработанные японской <b><sc_element sys_idtf="concept_game_company">компанией</b></sc_element> From software.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр Dark souls)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[<b><sc_element sys_idtf="concept_game_series_dark_souls"серия игр Dark souls</b></sc_element> состоит из 3 <b><sc_element sys_idtf="concept_computer_game">игр</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;	
+*);
+<- sc_node_not_relation;;

@@ -1,0 +1,34 @@
+concept_intellectual
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [интеллектуал]
+      (*<-lang_ru;;*);
+       [intellectual]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Герой, основная характеристика которого является интеллект]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (интеллектуал)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char;
+       nrel_main_stat;
+       concept_stat
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_intellectual">Интеллектуал</b></sc_element> - <b><sc_element sys_idtf="concept_hero_char">герой</b></sc_element>, <b><sc_element sys_idtf="nrel_main_stat">основная характеристика</b></sc_element> которого является <b><sc_element sys_idtf="concept_intelligence">интеллект</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Интеллектуал)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[За каждую единицу <b><sc_element sys_idtf="concept_intelligence">интеллекта</b></sc_element> <b><sc_element sys_idtf="concept_intellectual">интеллектуал</b></sc_element> получает дополнительный белый урон.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+

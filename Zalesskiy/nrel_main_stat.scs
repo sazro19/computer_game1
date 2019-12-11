@@ -1,0 +1,42 @@
+nrel_main_stat
+<- sc_node_norole_relation;
+<- binary_relation;
+<- oriented_relation;
+ => nrel_first_domain: concept_hero_char;
+  => nrel_second_domain: concept_stat;
+=> nrel_main_idtf:
+      [главная характеристика*]
+      (*<-lang_ru;;*);
+       [main stat*]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [основная характеристика героя]
+      (*<-lang_ru;;*);     
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (главная характеристика*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      concept_hero_char;
+      concept_stat
+    };;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[<b><sc_element sys_idtf="nrel_main_stat">Главная характеристика*</b></sc_element> - <b><sc_element sys_idtf="concept_stat">характеристика</b></sc_element> <b><sc_element sys_idtf="concept_hero_char">героя</b></sc_element>, за прирост к которой <b><sc_element sys_idtf="concept_hero_char">герой</b></sc_element> получает дополнительные бонусы.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+=> nrel_definitional_domain: ... (*
+        <= nrel_combination:
+{concept_hero_char;
+ concept_stat
+};;
+*);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(главная характеристика*)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[У <b><sc_element sys_idtf="concept_hero_char">героя</b></sc_element> может быть только одна <b><sc_element sys_idtf="nrel_main_stat">основная характеристика*</b></sc_element>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;

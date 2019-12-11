@@ -1,0 +1,45 @@
+computer_game_watch_dogs_2
+=> nrel_main_idtf: [Watch dogs 2] (* <- lang_en;; *);
+=> nrel_main_idtf: [Сторожевые псы 2] (* <- lang_ru;; *);
+<- concept_computer_game;
+<- concept_action;
+=> nrel_platform: concept_microsoft_windows; 
+=> nrel_platform: playstation_4;
+=> nrel_platform: xbox_one;   
+=> nrel_publisher: company_Ubisoft;
+=> nrel_developer: company_Ubisoft;
+=> nrel_publication_date: date_2016;
+<- concept_setting_nowadays;
+=> nrel_game_camera: concept_third_person_view;
+=> nrel_plot: [Главный герой игры — хакер, родом из Окленда, штат Калифорния, по имени Маркус Холлоуэй переезжает в Сан-Франциско, в сердце Кремниевой Долины, где, объединившись с группировкой активистов из организации DedSec, бросает вызов алчным корпорациям и коррумпированным властям города, взяв под управление обновлённую универсальную систему ctOS 2.0 и выкладывая свои действия в социальные сети.];
+<-concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+		concept_platform;
+          nrel_publication_date;
+          concept_singleplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Watch dogs 2)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Watch dogs - компьютерная игра с видом от третьего лица в жанре action, выпущена компанией Ubisoft в 2016 году на платформе Windows, xbox one, playstation 4. Одиночная с сюжетом. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/Watch_dogs2.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;

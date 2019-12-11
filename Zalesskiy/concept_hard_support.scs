@@ -1,0 +1,31 @@
+concept_hard_support
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [саппорт 5 позиции]
+      (*<-lang_ru;;*);
+       [hard support]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Герой, задача которого помогать союзному кору и покупка курьера и вардов.]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (саппорт 4 позиции)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Саппорт 5 позиции - герой, задача которого помогать союзному кору и покупка курьера и вардов.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(саппорт 5 позиции)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Саппорт 5 позиции, как правило, зарабатывает меньше всех.](*<-lang_ru;;*);;
+      *);;
+  *);;

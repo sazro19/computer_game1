@@ -1,0 +1,31 @@
+concept_game_series_just_couse
+
+=> nrel_main_idtf:[серия игр Just cause] (* <- lang_ru;; *);
+=> nrel_main_idtf:[game series Just cause] (* <- lang_en;; *);
+->rrel_first_game: computer_game_just_cause_1;
+-> computer_game_just_cause_2;
+-> computer_game_just_cause_3;
+->rrel_last_game: computer_game_just_cause_4;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+		concept_game_series
+	};;
+		=> nrel_main_idtf: [Опр.(серия игр Just cause)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Just cause - серия компьютерных игр в жанре action, разработанные компанией Square Enix.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(серия игр Just cause)](* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		->[Серия состоит из 4 игр.](* <- lang_ru;; *);;	
+	*);;	
+*);
+<- sc_node_not_relation;;

@@ -1,0 +1,32 @@
+concept_soft_support
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [саппорт 4 позиции]
+      (*<-lang_ru;;*);
+       [soft support]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Герой, задача которого помощь команде и перемещаться по линиям.]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (саппорт 4 позиции)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Саппорт 4 позиции - герой, задача которого помощь команде и перемещаться по линиям.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(саппорт 4 позиции)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Саппорт 4 позиции может также выполнять задачи саппорта 5 позиции.](*<-lang_ru;;*);;
+      *);;
+  *);;

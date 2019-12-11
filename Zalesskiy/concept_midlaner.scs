@@ -1,0 +1,32 @@
+concept_midlaner
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [мидер]
+      (*<-lang_ru;;*);
+       [midlaner]
+       (*<-lang_en;;*);
+=> nrel_idtf:
+      [Герой, стоящий на центральной линии]
+      (*<-lang_ru;;*); 
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (мидер)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_hero_char
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Мидер - герой, задача которого выиграть на средней линии.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(мидер)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Мидеры могут выполнять роль кора.](*<-lang_ru;;*);;
+      *);;
+  *);;
