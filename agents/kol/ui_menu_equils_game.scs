@@ -17,7 +17,7 @@ ui_user_command_class_view_kb;
 	[Запрос похожих игр: $ui_arg_1] (* <- lang_ru;; *);
 	[Request of simular game: $ui_arg_1] (* <- lang_en;; *);;
 
-ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
+/*ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
 (*
     	-> ui_menu_equils_game;;
-*);;
+*);;*/

@@ -16,7 +16,7 @@ ui_user_command_class_view_kb;
 	[Запрос поиска: $ui_arg_1] (* <- lang_ru;; *);
 	[Request of search: $ui_arg_1] (* <- lang_en;; *);;
 
-ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
+/*ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
 (*
 	-> ui_menu_search_year;;
-*);;
+*);;*/
