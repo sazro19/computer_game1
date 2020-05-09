@@ -10,8 +10,8 @@ computer_game_enter_the_gungeon
 => nrel_platform: concept_xbox_one;
 => nrel_platform: concept_PS4; 
 => nrel_platform: concept_nintendo_switch;
-=> nrel_publisher: company_Devolver_Digital;
-=> nrel_developer: company_Dodge_Roll;
+=> nrel_publisher: company_devolver_digital;
+=> nrel_developer: company_dodge_roll;
 => nrel_publication_date: date_2016;
 <- concept_setting_fantasy;
 <- concept_setting_anti_utopia_of_future;
